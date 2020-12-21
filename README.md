@@ -1,7 +1,3 @@
-![CI](https://github.com/hanwckf/rt-n56u/workflows/CI/badge.svg)
-![GitHub All Releases](https://img.shields.io/github/downloads/hanwckf/rt-n56u/total)
-[![release](https://img.shields.io/github/release/hanwckf/rt-n56u.svg)](https://github.com/hanwckf/rt-n56u/releases)
-
 # README #
 
 Welcome to the rt-n56u project
@@ -193,3 +189,5 @@ fakeroot ./build_firmware_modify PSG1218
 - https://www.jianshu.com/p/cb51fb0fb2ac
 - https://www.jianshu.com/p/6b8403cdea46
 
+
+主要为ZTE E8820S修改使用！
