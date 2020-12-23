@@ -158,7 +158,7 @@ struct nvram_pair router_defaults[] = {
 	{ "wl_country_code", DEF_WLAN_5G_CC },		/* Country Code (default obtained from driver) */
 	{ "wl_ssid", DEF_WLAN_5G_SSID },		/* Service set ID (network name) */
 #if BOARD_HAS_5G_11AC
-	{ "wl_gmode", "4" },			/* A/N/AC Mixed */
+	{ "wl_gmode", "3" },			/* N/AC Mixed */
 #else
 	{ "wl_gmode", "2" },			/* A/N Mixed */
 #endif
@@ -184,7 +184,7 @@ struct nvram_pair router_defaults[] = {
 	{ "wl_mrate", "2" },			/* Mcast Rate */
 	{ "wl_crypto", "aes" },			/* WPA data encryption */
 	{ "wl_wpa_psk", DEF_WLAN_5G_PSK },			/* WPA pre-shared key */
-	{ "wl_wpa_gtk_rekey", "3600" },		/* GTK rotation interval */
+	{ "wl_wpa_gtk_rekey", "0" },		/* GTK rotation interval */
 	{ "wl_radius_ipaddr", ""},		/* RADIUS server IP address */
 	{ "wl_radius_port", "1812" },		/* RADIUS server UDP port */
 	{ "wl_radius_key", "" },		/* RADIUS shared secret */
@@ -292,7 +292,7 @@ struct nvram_pair router_defaults[] = {
 	{ "rt_auth_mode", "psk" },
 	{ "rt_crypto", "aes" },
 	{ "rt_wpa_psk", DEF_WLAN_2G_PSK },
-	{ "rt_wpa_gtk_rekey", "3600" },
+	{ "rt_wpa_gtk_rekey", "0" },
 	{ "rt_key", "1" },
 	{ "rt_key_type", "0" } ,
 	{ "rt_key1", "" },
@@ -529,7 +529,7 @@ struct nvram_pair router_defaults[] = {
 
 #if defined(APP_TTYD)
 	/* ttyd related */
-	{ "ttyd_enable", "0" },
+	{ "ttyd_enable", "1" },
 	{ "ttyd_port", "7681" },
 
 	/* NAPT66 */
