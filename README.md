@@ -168,32 +168,4 @@ cd /opt/rt-n56u/toolchain-mipsel
 # （推荐）使用脚本下载预编译的工具链：
 sh dl_toolchain.sh
 
-# 或者，也可以从源码编译工具链，这需要一些时间：
-./clean_toolchain
-./build_toolchain
-
-```
-
-* (可选) 修改机型配置文件
-
-```shell
-nano /opt/rt-n56u/trunk/configs/templates/PSG1218.config
-```
-
-* 开始编译
-
-```shell
-cd /opt/rt-n56u/trunk
-# 对于WSL环境，建议使用sudo进行编译，或者使用fakeroot-tcp代替fakeroot
-fakeroot ./build_firmware_modify PSG1218
-# 脚本第一个参数为路由型号，在trunk/configs/templates/中
-# 编译好的固件在trunk/images里
-# 首次编译完成后，如果需要再次编译其它固件，需要执行清理脚本：
-./clean_tree
-```
-
-***
-
-### 请参阅 ###
-- https://www.jianshu.com/p/cb51fb0fb2ac
-- https://www.jianshu.com/p/6b8403cdea46
+# 或者，也可以从源码编译工具链，这需要一些时间
